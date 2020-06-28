@@ -37,15 +37,7 @@ read_pdf = PyPDF2.PdfFileReader(pdf_file)
 number_of_pages = read_pdf.getNumPages()
 summaries=[]
 summaries_Rank=[]
-for i in range(18,267):
-    page = read_pdf.getPage(i)
-    page_content = page.extractText().replace("\n","")
-    parser = PlaintextParser.from_string(page_content, Tokenizer("portuguese"))
-    summarizer_lsa = LsaSummarizer()
-    summaries.append(list(summarizer_lsa(parser.document,3)))
-    parser_rank = PlaintextParser.from_string(page_content, Tokenizer("portuguese"))
-    summarizer_lex = LexRankSummarizer()
-    summaries_Rank.append(list(summarizer_lex(parser_rank.document,3)))
+
 
 
 ## segunda modificação
