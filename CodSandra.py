@@ -48,5 +48,5 @@ for i in range(18,267):
     summaries_Rank.append(list(summarizer_lex(parser_rank.document,3)))
 
 
-## segunda modificação
+## 
 ## pequena modificação
