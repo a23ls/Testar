@@ -37,6 +37,7 @@ read_pdf = PyPDF2.PdfFileReader(pdf_file)
 number_of_pages = read_pdf.getNumPages()
 summaries=[]
 summaries_Rank=[]
+<<<<<<< HEAD
 for i in range(18,267):
     page = read_pdf.getPage(i)
     page_content = page.extractText().replace("\n","")
@@ -47,6 +48,13 @@ for i in range(18,267):
     summarizer_lex = LexRankSummarizer()
     summaries_Rank.append(list(summarizer_lex(parser_rank.document,3)))
 
-
+print(pdf_file)
 ## segunda modificação
 ##
+=======
+
+
+
+## 
+## pequena modificação
+>>>>>>> b635c2f3cf83b6e90d886218a4889fd0833a9230
