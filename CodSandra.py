@@ -32,11 +32,7 @@ from sumy.summarizers.lsa import LsaSummarizer #We're choosing Luhn, other algor
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
 
-pdf_file = open('Tese Sandra.pdf', 'rb')
-read_pdf = PyPDF2.PdfFileReader(pdf_file)
-number_of_pages = read_pdf.getNumPages()
-summaries=[]
-summaries_Rank=[]
+<<<<<<< HEAD
 <<<<<<< HEAD
 for i in range(18,267):
     page = read_pdf.getPage(i)
@@ -57,5 +53,7 @@ print(pdf_file)
 
 ## 
 ## pequena modificação
->>>>>>> b635c2f3cf83b6e90d886218a4889fd0833a9230
-#Mudeidenovo
+
+=======
+
+>>>>>>> 4aafb23218f88657483e1737f400ac76a22efd92
