@@ -32,8 +32,5 @@ from sumy.summarizers.lsa import LsaSummarizer #We're choosing Luhn, other algor
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
 
+<<<<<<< HEAD
 
-
-
-## 
-## pequena modificação
